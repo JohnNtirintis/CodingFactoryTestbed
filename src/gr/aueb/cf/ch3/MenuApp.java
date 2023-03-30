@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author Ioannis-Panagiotis Ntirintis
  */
-public class ManuApp {
+public class MenuApp {
     public static void main(String[] args) {
 
         int choice;
