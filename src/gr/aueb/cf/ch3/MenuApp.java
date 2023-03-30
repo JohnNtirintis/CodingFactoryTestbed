@@ -4,24 +4,22 @@ import java.util.Scanner;
 
 /**
  * Menu Application, repeatedly showing a menu until a user -
- * - enters a specified number
+ * - enters 5
  *
  * @author Ioannis-Panagiotis Ntirintis
  */
 public class MenuApp {
     public static void main(String[] args) {
 
-        int choice;
+        int choice = 0;
 
         //Initiating Scanner for user input
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Give number for menu:");
-
-
         //Do while loop to repeatedly ask for a user input and to show the menu
         //Until the user enters the num 5
         do {
+            System.out.println("Δωστε αριθμο για επιλογη στο menu:");
             System.out.println("1. Εισαγωγη");
             System.out.println("2. Διαγραφη");
             System.out.println("3. Ενημερωση");
@@ -44,7 +42,7 @@ public class MenuApp {
             else if (choice == 5){
                 System.out.println("Επιλεξατε Εξοδο");
             }
-            //If the user enters an incorrect value an error message will appear to guide them
+            //If the user enters an incorrect value an error message will appear to notify and guide them
             else {
                 System.out.println("Παρακαλω δωστε μια τιμη μεταξυ 1 εως και 5.");
             }
